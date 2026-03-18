@@ -1,2 +1,2 @@
 # jensstam.github.io
-Webpages
+webpages
