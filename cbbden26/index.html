@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CBB Does Denver 🌈</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Drifting stars -->
+  <div class="stars-bg" id="stars"></div>
+
+  <!-- Decorative blobs -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-inner">
+      <span class="header-emoji">🦄✨🌈</span>
+      <h1>CBB Does Denver</h1>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+
+    <!-- Toolbar -->
+    <div class="toolbar">
+      <span class="toolbar-label">✏️ Edit Mode</span>
+      <div class="toggle-wrap">
+        <button class="toggle" id="editToggle" aria-label="Toggle edit mode"></button>
+        <span class="toggle-text" id="toggleLabel">OFF</span>
+      </div>
+      <button class="add-day-btn" onclick="addDay()">+ Add Day</button>
+    </div>
+
+    <!-- Itinerary renders here -->
+    <div id="itinerary"></div>
+
+  </main>
+
+  <footer>
+     💖 CBB Does Denver 2026 🌈
+  </footer>
+
+  <!-- Password Modal -->
+  <div class="modal-overlay" id="pwModal">
+    <div class="modal" style="max-width:340px;text-align:center;">
+      <div style="font-size:2.5rem;margin-bottom:0.5rem;">🔐</div>
+      <h2 style="margin-bottom:0.75rem;">Enter Password</h2>
+      <input type="password" id="pwInput" placeholder="Password" style="text-align:center;letter-spacing:3px;"
+             onkeydown="if(event.key==='Enter') checkPassword()">
+      <p id="pwError" style="color:#BE123C;font-size:0.8rem;font-weight:800;margin-top:0.5rem;min-height:1.2em;"></p>
+      <div class="modal-btns">
+        <button class="btn-save" onclick="checkPassword()">✨ Unlock</button>
+        <button class="btn-cancel" onclick="closePwModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Edit Event Modal -->
+  <div class="modal-overlay" id="eventModal">
+    <div class="modal">
+      <h2 id="modalTitle">✨ Add Event</h2>
+      <label>Time (e.g. 12:00 PM)</label>
+      <input type="text" id="mTime" placeholder="12:00 PM">
+      <label>Activity / Title</label>
+      <input type="text" id="mActivity" placeholder="e.g. Ghost Tour">
+      <label>Location</label>
+      <input type="text" id="mLocation" placeholder="e.g. Nightly Spirits (LoDo)">
+      <label>Link (optional)</label>
+      <input type="url" id="mLink" placeholder="https://...">
+      <label>Notes / Details (optional)</label>
+      <textarea id="mNotes" placeholder="Any special info, tips, allergy notes..."></textarea>
+      <label>Dietary Tags</label>
+      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px;" id="tagCheckboxes"></div>
+      <label>Emoji Icon</label>
+      <input type="text" id="mEmoji" placeholder="🎉" maxlength="4" style="width:80px;">
+      <div class="modal-btns">
+        <button class="btn-save" onclick="saveEvent()">💾 Save</button>
+        <button class="btn-cancel" onclick="closeModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Edit Day Modal -->
+  <div class="modal-overlay" id="dayModal">
+    <div class="modal">
+      <h2>🗓️ Edit Day</h2>
+      <label>Day Name (e.g. Saturday, April 19)</label>
+      <input type="text" id="dName" placeholder="Saturday, April 19">
+      <label>Emoji</label>
+      <input type="text" id="dEmoji" placeholder="🎉" maxlength="4" style="width:80px;">
+      <div class="modal-btns">
+        <button class="btn-save" onclick="saveDay()">💾 Save</button>
+        <button class="btn-cancel" onclick="closeDayModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
