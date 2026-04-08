@@ -9,7 +9,7 @@ const defaultData = [
       { id:'e1', time:'12:30 PM', activity:'Jens & Connor Lunch', location:'La Calle Grill (food truck) + Beer Garden', link:'', notes:'', icon:'🌮', tags:[] },
       { id:'e2', time:'2:00 PM', activity:'Ben & Ashley Arrival', location:'DIA', link:'', notes:'', icon:'✈️', tags:[] },
       { id:'e3', time:'5:00 PM', activity:'Early Dinner', location:'Just BE Kitchen (LoHi)', link:'https://www.justbekitchen.com/lohi', notes:'DF/NF/Soy-free', icon:'🥗', tags:['df','nf','sf'] },
-      { id:'e4', time:'7:00 PM', activity:'Ghost Tour & Pub Crawl', location:'Nightly Spirits (LoDo)', link:'https://nightlyspirits.com/denver/denver-denver-tours/', notes:'', icon:'👻', tags:[] },
+      { id:'e4', time:'7:00 PM', activity:'Ghost Tour & Pub Crawl', location:'Denver Terrors - Haunted Pub Crawl', link:'https://denverterrors.com/haunted-pub-crawl/', notes:'', icon:'👻', tags:[] },
     ]
   },
   {
