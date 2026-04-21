@@ -38,7 +38,7 @@ const defaultData = [
       { id:'e15', time:'9:00 AM', activity:'Breakfast', location:'No Cow Bakery (Castle Rock)', link:'https://www.nocowbakery.com', notes:'GF & DF', icon:'🧁', tags:['gf','df'] },
       { id:'e16', time:'11:00 AM', activity:'Chill Vibes', location:'Castle Rock', link:'https://www.crgov.com/2842/Rock-Park', notes:'Rock park hike / walk around downtown Castle Rock', icon:'🪨', tags:[] },
       { id:'e17', time:'3:00 PM', activity:'Late Lunch / Early Dinner', location:'Mad Greens (Castle Rock)', link:'https://www.madgreens.com', notes:'GF & DF & NF options', icon:'🥙', tags:['gf','df','nf'] },
-      { id:'e18', time:'4:30 PM', activity:'Drive to Red Rocks', location:'Morrison, CO', link:'https://www.redrocksonline.com/plan-your-visit/permitted-prohibited-items/', notes:'Rush hour weekday, leave early', icon:'🚗', tags:['tip'] },
+      { id:'e18', time:'4:00 PM', activity:'Drive to Red Rocks', location:'Morrison, CO', link:'https://www.redrocksonline.com/plan-your-visit/permitted-prohibited-items/', notes:'Rush hour weekday, leave early', icon:'🚗', tags:['tip'] },
       { id:'e19', time:'7:00 PM', activity:'Concert', location:'Red Rocks Amphitheatre', link:'https://www.redrocksonline.com/events/ethel-cain-1145150/', notes:'', icon:'🎸', tags:['concert'] },
     ]
   },
