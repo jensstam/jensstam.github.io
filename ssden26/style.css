@@ -1,0 +1,560 @@
+/* ========================================
+   Spring Minimalist Flower Theme
+   Gender-neutral, mobile-first
+   ======================================== */
+
+:root {
+    --bg: #faf8f5;
+    --card-bg: #ffffff;
+    --text-primary: #3a3a3a;
+    --text-secondary: #6b6b6b;
+    --text-muted: #999999;
+    --accent: #c4a882;
+    --accent-light: #e8dcc8;
+    --accent-spring: #a8b5a0;
+    --accent-spring-light: #d4ddd0;
+    --petal-pink: #e8c4c4;
+    --petal-pink-light: #f2e4e4;
+    --petal-lavender: #c4c4d8;
+    --petal-lavender-light: #e4e4f0;
+    --border: #ece8e3;
+    --shadow: rgba(0, 0, 0, 0.06);
+    --shadow-hover: rgba(0, 0, 0, 0.10);
+    --link-color: #7a8a72;
+    --link-hover: #5a6a52;
+    --optional-bg: #f5f3f0;
+    --radius: 12px;
+    --radius-sm: 8px;
+    --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-display: 'Playfair Display', Georgia, serif;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: var(--font-body);
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+    padding-bottom: 2rem;
+}
+
+
+/* Ensure main content sits above background */
+.site-header,
+.day-nav,
+.schedule,
+.site-footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* ========================================
+   Floral SVG decorations (inline CSS art)
+   ======================================== */
+
+.header-floral,
+.footer-floral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+}
+
+.header-floral::before,
+.header-floral::after,
+.footer-floral::before,
+.footer-floral::after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    opacity: 0.5;
+}
+
+.header-floral::before {
+    background: var(--petal-pink);
+    width: 10px;
+    height: 10px;
+}
+
+.header-floral::after {
+    background: var(--petal-lavender);
+    width: 8px;
+    height: 8px;
+}
+
+.header-floral span,
+.footer-floral span {
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    background: var(--accent);
+    opacity: 0.3;
+    transform: rotate(15deg);
+}
+
+/* ========================================
+   Header
+   ======================================== */
+
+.site-header {
+    text-align: center;
+    padding: 2.5rem 1.5rem 1.5rem;
+    background: linear-gradient(180deg, var(--accent-spring-light) 0%, var(--bg) 100%);
+}
+
+.site-title {
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+    margin: 0.25rem 0;
+}
+
+.site-subtitle {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+
+/* ========================================
+   Day Navigation
+   ======================================== */
+
+.day-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border);
+    padding: 0.75rem 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+.day-nav::-webkit-scrollbar {
+    display: none;
+}
+
+.day-nav-inner {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 1rem;
+    min-width: max-content;
+    align-items: center;
+}
+
+.day-nav-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    padding: 0.5rem 0.75rem;
+    border: 2px solid transparent;
+    border-radius: var(--radius);
+    background: var(--bg);
+    color: var(--text-secondary);
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.day-nav-btn:hover {
+    background: var(--accent-light);
+    color: var(--text-primary);
+}
+
+.day-nav-btn.active {
+    background: var(--accent-spring-light);
+    border-color: var(--accent-spring);
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.day-nav-btn .nav-day {
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.day-nav-btn .nav-name {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    opacity: 0.8;
+}
+
+/* ========================================
+   Schedule Main
+   ======================================== */
+
+.schedule {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+}
+
+/* ========================================
+   Day Card
+   ======================================== */
+
+.day-section {
+    margin-bottom: 2.5rem;
+    scroll-margin-top: 5rem;
+}
+
+.day-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--border);
+}
+
+.day-date-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-spring-light);
+    border-radius: var(--radius-sm);
+    padding: 0.5rem 0.75rem;
+    min-width: 56px;
+    flex-shrink: 0;
+}
+
+.day-date-badge .badge-month {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.day-date-badge .badge-day {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+    color: var(--text-primary);
+}
+
+.day-date-badge .badge-year {
+    font-size: 0.6rem;
+    color: var(--text-muted);
+}
+
+.day-title {
+    flex: 1;
+}
+
+.day-title h2 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.3;
+}
+
+.day-details {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 0.15rem;
+}
+
+/* ========================================
+   Activity Card
+   ======================================== */
+
+.activities {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.activity-card {
+    display: flex;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    box-shadow: 0 1px 4px var(--shadow);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.activity-card:hover {
+    box-shadow: 0 4px 12px var(--shadow-hover);
+    transform: translateY(-1px);
+}
+
+.activity-card.optional {
+    background: var(--optional-bg);
+    border-style: dashed;
+    border-color: var(--accent-light);
+}
+
+.activity-card.continued {
+    background: var(--petal-lavender-light);
+    border-color: var(--petal-lavender);
+}
+
+/* Time column */
+.activity-time {
+    flex-shrink: 0;
+    width: 60px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--accent-spring);
+    padding-top: 0.15rem;
+    min-height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.activity-time .time-icon {
+    font-size: 0.7rem;
+    opacity: 0.6;
+    margin-bottom: 0.15rem;
+}
+
+.activity-time:empty {
+    visibility: hidden;
+}
+
+/* Content column */
+.activity-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.activity-location {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    margin-bottom: 0.25rem;
+}
+
+.activity-location .loc-icon {
+    font-size: 0.75rem;
+}
+
+.activity-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.4;
+    margin-bottom: 0.25rem;
+}
+
+.activity-details {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.activity-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.activity-link:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+.activity-link .link-icon {
+    font-size: 0.85rem;
+}
+
+/* Optional badge */
+.optional-badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+    background: var(--accent-light);
+    padding: 0.15rem 0.5rem;
+    border-radius: 20px;
+    margin-bottom: 0.35rem;
+}
+
+/* Continued badge */
+.continued-badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--petal-lavender);
+    background: var(--petal-lavender-light);
+    padding: 0.15rem 0.5rem;
+    border-radius: 20px;
+    margin-bottom: 0.35rem;
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+
+.site-footer {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
+
+.footer-floral {
+    margin-bottom: 0.5rem;
+}
+
+/* ========================================
+   Decorative Flower SVGs (CSS-only)
+   ======================================== */
+
+.flower-decoration {
+    text-align: center;
+    padding: 1rem 0;
+    opacity: 0.15;
+    font-size: 1.5rem;
+    user-select: none;
+}
+
+/* ========================================
+   Loading state
+   ======================================== */
+
+.loading {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--text-muted);
+}
+
+.loading .spinner {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: 3px solid var(--border);
+    border-top-color: var(--accent-spring);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ========================================
+   Error state
+   ======================================== */
+
+.error {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    color: var(--text-secondary);
+}
+
+.error h3 {
+    font-family: var(--font-display);
+    margin-bottom: 0.5rem;
+}
+
+/* ========================================
+   Responsive
+   ======================================== */
+
+@media (max-width: 380px) {
+    .site-title {
+        font-size: 1.8rem;
+    }
+    .activity-card {
+        padding: 0.75rem;
+    }
+    .activity-time {
+        width: 50px;
+        font-size: 0.75rem;
+    }
+    .day-nav-btn {
+        min-width: 52px;
+        padding: 0.4rem 0.5rem;
+    }
+}
+
+@media (min-width: 480px) {
+    .site-header {
+        padding: 3rem 2rem 2rem;
+    }
+    .site-title {
+        font-size: 2.6rem;
+    }
+    .schedule {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .site-header {
+        padding: 3.5rem 2rem 2.5rem;
+    }
+    .day-nav-inner {
+        justify-content: center;
+    }
+}
+
+/* ========================================
+   Print styles
+   ======================================== */
+
+@media print {
+    .day-nav {
+        position: static;
+        box-shadow: none;
+    }
+    .activity-card {
+        break-inside: avoid;
+    }
+    .day-section {
+        break-inside: avoid;
+    }
+}

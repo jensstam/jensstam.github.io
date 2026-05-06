@@ -1,0 +1,224 @@
+[
+  {
+    "date_header": "5/7/2026 - THURSDAY",
+    "details": "Details - Rubina & Jens Working Throughout",
+    "activities": [
+      {
+        "location": "Home",
+        "time": "12:25 PM",
+        "activity": "Arrival (DEN)",
+        "details": "Dad, Mom, Neel Arrive - Jens Pick Up"
+      },
+      {
+        "activity": "Lunch at Home",
+        "details": "Groceries"
+      },
+      {
+        "time": "6:30 PM",
+        "activity": "Dinner at Home",
+        "details": "Italian Dinner (Spicy Rigatoni, Italian Salad, Garlic Bread, Meatballs)"
+      },
+      {
+        "activity": "Dessert at Home",
+        "details": "Ice Cream, Baked Dessert, Fruit"
+      }
+    ]
+  },
+  {
+    "date_header": "5/8/2026 - FRIDAY",
+    "details": "Details - Rubina & Jens Working Throughout",
+    "activities": [
+      {
+        "location": "Home",
+        "time": "9:00 AM",
+        "activity": "Breakfast at Home",
+        "details": "Boiled Eggs, Toast, Ghee/Jam, Chicken Sausages, Coffee, Fruit etc."
+      },
+      {
+        "activity": "Optional",
+        "details": "Go on a walk in neighborhood"
+      },
+      {
+        "time": "12:00 PM",
+        "activity": "Lunch at Home",
+        "details": "Groceries"
+      },
+      {
+        "time": "3:00 PM",
+        "activity": "Rubina Last Work Call"
+      },
+      {
+        "time": "6:00 PM",
+        "activity": "Dinner",
+        "details": "Parry's Pizza (Takeout)",
+        "link": "https://parryspizza.com/locations/castle-rock/"
+      },
+      {
+        "activity": "Games/TV",
+        "details": "Shark Tank, Donkey Kong, Switch Games etc."
+      }
+    ]
+  },
+  {
+    "date_header": "5/9/2026 - SATURDAY",
+    "details": "Details",
+    "activities": [
+      {
+        "location": "Garden of the Gods",
+        "time": "9:00 AM",
+        "activity": "Breakfast at Home",
+        "details": "Boiled Eggs, Toast, Ghee/Jam, Chicken Sausages, Coffee, Fruit etc."
+      },
+      {
+        "time": "10:00 AM",
+        "activity": "Leave for Light Hike/Mountain Trail Walk",
+        "details": "Garden of the Gods, Packs Snacks, Water",
+        "link": "https://gardenofgods.com/park-info/get-directions/"
+      },
+      {
+        "time": "2:00 PM",
+        "activity": "Lunch",
+        "details": "Snarf's Sandwiches",
+        "link": "https://www.eatsnarfs.com/castle-rock"
+      },
+      {
+        "time": "6:00 PM",
+        "activity": "Dinner",
+        "details": "Hong Kong Station",
+        "link": "https://www.hkstationdenver.com"
+      },
+      {
+        "activity": "Dessert",
+        "details": "Michocan Ice Cream",
+        "link": "https://michoacan-a-pedir-de-boca.square.site/?location=LF9VFH7X0MGD6"
+      },
+      {
+        "activity": "Optional",
+        "details": "Watch a Movie"
+      }
+    ]
+  },
+  {
+    "date_header": "5/10/2026 - SUNDAY",
+    "details": "Details",
+    "activities": [
+      {
+        "location": "Foothills",
+        "time": "12:00 PM",
+        "activity": "Godavari",
+        "details": "Indian Buffet Mother's Day",
+        "link": "https://www.godavarius.com/denver.html"
+      },
+      {
+        "time": "1:30 PM",
+        "activity": "House Hunters for Fun",
+        "details": "Genessee, Castle Pines"
+      },
+      {
+        "activity": "Relax",
+        "details": "Nap, Chill, Switch Games (Super Smash Bros) etc."
+      },
+      {
+        "time": "6:30 PM",
+        "activity": "Light Dinner",
+        "details": "Nicole Comes Over, Burrito Bowls with Grilled Chicken Breast, Steak, Veggie Burgers"
+      }
+    ]
+  },
+  {
+    "date_header": "5/11/2026 - MONDAY",
+    "details": "Details - Rubina & Jens Working Throughout",
+    "activities": [
+      {
+        "location": "Home",
+        "activity": "Breakfast",
+        "details": "Groceries"
+      },
+      {
+        "activity": "Lunch",
+        "details": "Groceries"
+      },
+      {
+        "time": "3:30 PM",
+        "activity": "Departure (DEN)",
+        "details": "Drop Neel to Airport"
+      },
+      {
+        "activity": "Optional",
+        "details": "Gym"
+      },
+      {
+        "activity": "Dinner",
+        "details": "Groceries"
+      }
+    ]
+  },
+  {
+    "date_header": "5/12/2026 - TUESDAY",
+    "details": "Details - Rubina & Jens Working Throughout",
+    "activities": [
+      {
+        "location": "Home",
+        "activity": "Breakfast",
+        "details": "Groceries"
+      },
+      {
+        "activity": "Lunch",
+        "details": "Groceries"
+      },
+      {
+        "activity": "Optional",
+        "details": "Go on a walk in neighborhood"
+      },
+      {
+        "activity": "Optional",
+        "details": "Gym"
+      },
+      {
+        "activity": "Dinner",
+        "details": "Groceries"
+      },
+      {
+        "activity": "Optional",
+        "details": "Watch a Movie"
+      }
+    ]
+  },
+  {
+    "date_header": "5/13/2026 - WEDNESDAY",
+    "details": "Details - Rubina & Jens Working Throughout",
+    "activities": [
+      {
+        "location": "Home",
+        "activity": "Breakfast",
+        "details": "Groceries"
+      },
+      {
+        "activity": "Lunch",
+        "details": "Groceries"
+      },
+      {
+        "activity": "Optional",
+        "details": "Go on a walk in neighborhood"
+      },
+      {
+        "activity": "Optional",
+        "details": "Gym"
+      },
+      {
+        "activity": "Dinner",
+        "details": "Chutney Sandwiches, Tomato Soup, Chips"
+      }
+    ]
+  },
+  {
+    "date_header": "5/13/2026 - THURSDAY",
+    "details": "Details - Rubina & Jens Working Throughout",
+    "activities": [
+      {
+        "activity": "Departure (DEN)",
+        "details": "Drop Dad, Mom & Jeeth to Airport"
+      }
+    ]
+  }
+]
