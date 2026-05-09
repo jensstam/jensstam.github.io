@@ -64,12 +64,13 @@
     "details": "Details",
     "activities": [
       {
-        "location": "Garden of the Gods",
+        "location": "Home",
         "time": "9:00 AM",
         "activity": "Breakfast at Home",
         "details": "Boiled Eggs, Toast, Ghee/Jam, Chicken Sausages, Coffee, Fruit etc."
       },
       {
+        "location": "Garden of the Gods",
         "time": "10:00 AM",
         "activity": "Leave for Light Hike/Mountain Trail Walk",
         "details": "Garden of the Gods, Packs Snacks, Water",
@@ -100,7 +101,7 @@
   },
   {
     "date_header": "5/10/2026 - SUNDAY",
-    "details": "Details",
+    "details": "",
     "activities": [
       {
         "location": "Foothills",
