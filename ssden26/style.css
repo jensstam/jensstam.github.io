@@ -97,15 +97,6 @@ body {
     height: 8px;
 }
 
-.header-floral span,
-.footer-floral span {
-    display: inline-block;
-    width: 1px;
-    height: 20px;
-    background: var(--accent);
-    opacity: 0.3;
-    transform: rotate(15deg);
-}
 
 /* ========================================
    Header
